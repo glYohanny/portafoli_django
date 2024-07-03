@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+{% load bootstrap5 %}
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- Font Awesome -->
+    <link href="{% static 'vendor/font-awesome/fontawesome.css' %}" rel="stylesheet" />
+    <link href="{% static 'vendor/font-awesome/brands.css' %}" rel="stylesheet" />
+    <link href="{% static 'vendor/font-awesome/solid.css' %}" rel="stylesheet" />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="{% static 'vendor/normalize/normalize.css' %}">
+    <!-- Bootstrap 5.3 -->
+    {% bootstrap_css %}
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="logo" src="{% static 'img/logo.png' %}" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curriculum">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Pasatiempos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about" class="about">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="{% static 'img/usuario.png' %}" alt="Mi Foto">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre Mí</h2>
+                    <p>
+                        Tengo 19 años, estudiante de Duoc UC, curso Ingeniería en Informática, titulado en técnico en Contabilidad de nivel medio. Disfruto de jugar ajedrez y videojuegos, pasar tiempo con mi familia y de ir al gimnasio. Me encanta aprender de la experiencia y acepto cualquier reto que ponga a prueba mis habilidades.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Habilidades -->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Habilidades</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 60%;">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 50%;">
+                                    <span>50%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 96%;">
+                                    <span>96%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 90%;">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Excel</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 70%;">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Habilidades Profesionales -->
+                    <div class="col">
+                        <h3>Habilidades Profesionales</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 60%;">
+                                    <span>60%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 85%;">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Manejo de trabajos</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Curriculum -->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Educacion Media</h4>
+                            <span class="casa">Liceo Bicentenario Politecnico de Castro</span>
+                            <span class="fecha">2019 - 2022</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Universitaria</h4>
+                            <span class="casa">DUOC UC</span>
+                            <span class="fecha">2023 - Actualidad</span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Ayudante de contador</h4>
+                            <span class="casa">Estudio contable JC</span>
+                            <span class="fecha">2022-2023</span>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Pasatiempos -->
+        <section class="sec_pasa_tiempos" id="hobbies">
+            <div class="contenido-seccion">
+                <h2>Pasatiempos</h2>
+                <div class="pasa_tiempos">
+                    <h3>Me encanta pasar mi tiempo libre en actividades que me permiten relajarme y aprender cosas nuevas. Algunos de mis pasatiempos favoritos son:</h3>
+                    <div class="fila">
+                        <div class="columna">
+                            <div class="item">
+                                <img src="{% static 'img/ajedrez.png' %}" alt="Jugar ajedrez">
+                                <span>Jugar ajedrez</span>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'img/ordenador-portatil.png' %}" alt="Videojuegos">
+                                <span>Videojuegos</span>
+                            </div>
+                        </div>
+                        <div class="columna">
+                            <div class="item">
+                                <img src="{% static 'img/familia.png' %}" alt="Pasar tiempo con mi familia">
+                                <span>Pasar tiempo con mi familia</span>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'img/peso.png' %}" alt="Ir al gimnasio">
+                                <span>Ir al gimnasio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Proyectos -->
+        <section class="sec_proyecto" id="projects">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="proyectos">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="{% static 'proyectos/Dager_shop.html' %}" target="_blank">
+                                    <img src="{% static 'img/screem_dager.png' %}" class="d-block w-100" alt="Dager Estudio">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Dager Estudio</h5>
+                                    <p>Página en desarrollo para tienda virtual.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{% static 'proyectos/Dino/index.html' %}" target="_blank">
+                                    <img src="{% static 'img/dino_screem.png' %}" class="d-block w-100" alt="Dino">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Dino</h5>
+                                    <p>Juego clásico de Google.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="{% static 'proyectos/pokemon+/pokemon.html' %}" target="_blank">
+                                    <img src="{% static 'img/api_poke.png' %}" class="d-block w-100" alt="PokePlus">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>PokePlus</h5>
+                                    <p>Pokedex de la primera generación con la PokeAPI.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Formulario -->
+        <section class="formulario" id="form">
+            <form id="contactForm">
+                <h2 class="titulo_formulario">Contáctame</h2>
+                <input type="text" placeholder="Nombre" id="nameInput">
+                <input type="email" placeholder="Email" id="emailInput">
+                <textarea placeholder="Mensaje" id="messageInput"></textarea>
+                <button type="button" id="submitButton">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    {% bootstrap_javascript %}
+    <!-- JS personalizado -->
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

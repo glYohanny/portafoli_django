@@ -1,0 +1,351 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #0056b3;
+}
+.logo{
+    width: 65px;
+    height: 65px;
+}
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Estilos generales para la sección "Sobre Mí" */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 0 0 150px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace la imagen circular */
+    border: 5px solid #ccc; /* Añade un borde alrededor de la imagen */
+}
+
+.about-text {
+    flex: 1;
+}
+
+
+/* Sección Habilidades */
+.skills {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.skills .contenido-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills .col {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+}
+
+.skills h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skills .skill {
+    margin-bottom: 15px;
+}
+
+.skills .skill span {
+    display: block;
+    font-weight: bold;
+}
+
+.skills .barra-skill {
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.skills .progreso {
+    background: #007bff;
+    height: 20px;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sección Curriculum */
+.curriculum {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curriculum .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.curriculum .col {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+}
+
+.curriculum h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.curriculum .item {
+    margin-bottom: 20px;
+}
+
+.curriculum .item h4 {
+    font-size: 20px;
+}
+
+.curriculum .item .casa, .curriculum .item .fecha {
+    display: block;
+    font-size: 16px;
+    color: #555;
+}
+
+.curriculum .item .conectori, .curriculum .item .conectord {
+    width: 2px;
+    height: 20px;
+    background-color: #007bff;
+    margin: 10px auto;
+}
+
+.curriculum .item .circuloi, .curriculum .item .circulod {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Sección Pasatiempos */
+.sec_pasa_tiempos {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.sec_pasa_tiempos .contenido-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec_pasa_tiempos .pasa_tiempos {
+    text-align: center;
+}
+
+.sec_pasa_tiempos .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec_pasa_tiempos .columna {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+}
+
+.sec_pasa_tiempos .item {
+    margin-bottom: 20px;
+}
+
+.sec_pasa_tiempos .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sec_pasa_tiempos .item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Sección Contacto */
+.formulario {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.formulario .titulo_formulario {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input, .formulario textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .skills .fila, .curriculum .fila, .sec_pasa_tiempos .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item img{
+        display: none;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* Estilos personalizados para el carrusel */
+.carousel-item img {
+    height: 400px; /* Ajustar la altura de las imágenes */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para los textos */
+    padding: 20px; /* Espaciado interno para los textos */
+}
+
+.carousel-caption h5 {
+    color: #fff; /* Color del título */
+    font-size: 24px; /* Tamaño del título */
+}
+
+.carousel-caption p {
+    color: #fff; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para los botones */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff; /* Color de los iconos de navegación */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cambio de color al pasar el cursor sobre los botones */
+}
+/* Estilos para el contenedor del popup */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    z-index: 1000; /* Asegura que el popup esté sobre todo */
+}
+
+/* Estilos para el contenido del popup */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para efecto de profundidad */
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto; /* Permitir desplazamiento vertical si el contenido es demasiado largo */
+}
+
+/* Estilos para el botón de cerrar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
